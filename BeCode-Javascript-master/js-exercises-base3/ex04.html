@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
+    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
+    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
+    <button type="button" name="button">RAZ</button>
+  </form>
+  <script>
+  	let goButton = document.getElementsByTagName("button")[0];
+  	let goInput = document.getElementsByTagName("input");
+
+  	goButton.addEventListener("click", goAction);
+
+  	
+  	function goAction () {
+	  	for (var i = goInput.length - 1; i >= 0; i--) {
+	  		goInput[i].value = "";
+	  	}
+  	}
+  </script>
+</body>
+</html>

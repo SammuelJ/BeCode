@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ex03</title>
+	</head>
+	<body>
+		<button id="goButton">Affiche le résultat</button>
+		<script type="text/javascript">
+			document.getElementById('goButton').onmouseenter = affiche;
+			let a = 3;
+			let b = 2;
+
+			function triple (x) {
+				return x * 3;
+			}
+			function affiche () {
+				alert(triple(a));
+				alert(triple(b));
+			}
+		</script>
+		
+	</body>
+</html>

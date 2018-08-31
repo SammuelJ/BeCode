@@ -1,0 +1,333 @@
+/***
+
+TO-DO
+
+FAIRE TOUTES LES ICONES EN BG IMAGE ET PAS IMAGE
+
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.textGrey {
+    color: #737d8e;
+}
+body {
+    background-color: #e9edf2;
+}
+.emphasised {
+    font-style: italic;
+}
+/*-------*/
+header nav ul {
+    display: flex;
+    margin-top: 1.2em;
+}
+header nav ul li {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 21px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+header nav ul li.logo {
+    margin: 0 2.5em 0 1em;
+}
+header nav ul li.logo img {
+    vertical-align: middle;
+    height: 3em;
+}
+header nav ul li.logo span {
+    vertical-align: middle;
+    height: 3em;
+    font-size: 1.6em;
+}
+header nav ul li.firstElementRight {
+    margin-left: auto;
+}
+header nav ul li.topBarButtonlist {
+    margin: 0;
+}
+header nav ul li a.topBarButton {
+    border: 1px solid black;
+    padding: 0.6em 0.8em;
+}
+header nav ul li a.bgWhite {
+    border-left: none;
+    border-bottom-right-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    background-color: #ffffff;
+}
+header nav ul li a.bgBlue {
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    background-color: #3f9bf8;
+    color: white;
+}
+
+/****------****/
+
+header h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 1.5em;
+}
+/****------****/
+
+section.features {
+    background-color: #3f4655;
+}
+section.features ul {
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    outline: 1px #1f232a solid;
+}
+section.features ul li {
+    border-right: 1px #1f232a solid;
+    padding: 1.2em 1.2em 3em 1.2em;
+}
+section.features ul li h4 {
+    font-size: 1.3em;
+    color: white;
+    margin: 0.2em 0 1em 0;
+}
+
+section.features ul li p {
+    color: #737883;
+    font-size: 1.1em;
+}
+/****------****/
+section.firstCTA {
+    text-align: center;
+    margin: 3em 0 1em 0;
+}
+section.firstCTA p.mainText {
+    font-size: 1.61em;
+    margin: 0 10em 2em 10em;
+}
+section.firstCTA a {
+    border: 1px solid black;
+    color: white;
+    background-color: #3093f7;
+    padding: 0.5em 2em;
+    font-size: 1.4em;
+    border-radius: 0.3em;
+}
+section.firstCTA p.disclamer {
+    margin: 2em 0 0em 0;
+}
+/********/
+section.bgpresentation {
+    background-image: url(../img/bgSection.png);
+    height: 550px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*------*/
+section.platform {
+    text-align: center;
+    padding: 3.5em 0 2.5em 0;
+    background-color: white;
+}
+section.platform h3 {
+    font-size: 1.85em;
+}
+section.platform p {
+    font-size: 1.35em;
+    margin: 1em 20em 0 20em;
+    font-weight: 300;
+}
+/*---------**/
+section.pricesPlan {
+    background-color: white;
+}
+section.pricesPlan ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+}
+section.pricesPlan ul li.plan {
+    padding: 2em 5em;
+    font-size: 1.2em;
+}
+section.pricesPlan ul li.plan a {
+    border: 1px solid black;
+    background-color: #3f9bf8;
+    color: white;
+    padding: 0.35em 1em;
+    border-radius: 0.4em;
+}
+section.pricesPlan ul li.monthlyPlans {
+    border-right: 1px solid #d9d9d9;
+}
+section.pricesPlan ul li ul {
+    display: block;
+}
+section.pricesPlan ul h6 {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+section ul li p.emphasised {
+    margin-top: 1.5em;
+}
+section ul li ul {
+    margin-bottom: 1.5em;
+}
+/*------*/
+section.whosUsing {
+    outline: 1px solid #c6cace;
+    padding: 3.5em 0 2.5em 0;
+}
+section.whosUsing h3 {
+    font-size: 2em;
+    text-align: center;
+}
+section.whosUsing p {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 300;
+    margin: 1em 20em;
+}
+section.whosUsing ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 3.5em 0;
+}
+section.whosUsing ul li {
+    margin: 0 1.5em;
+}
+section.whosUsing img {
+    height: 50px;
+    filter: opacity(35%) grayscale(100%); 
+}
+/***----*/
+section.getStarted {
+    background-color: white;
+    padding: 2.3em 0 5.5em 0;
+}
+section.getStarted h2, section.getStarted p {
+    text-align: center;
+}
+section.getStarted h2 {
+    font-size: 2em;
+    font-weight: 300;
+    padding: 0 0 0.7em 0;
+}
+section.getStarted p {
+    font-weight: 300;
+    font-size: 0.9em;
+    margin: 0 30em 1.8em 30em;
+}
+section.getStarted a.textGrey {
+    display: block;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 0.8em;
+}
+section.getStarted div {
+    border: 1px solid black;
+    border-radius: 0.3em;
+    background-color: #e9edf2;
+    width: 30%;
+    margin: 0 auto 1.7em auto;
+    padding: 2em;
+}
+section.getStarted div label {
+    font-size: 0.75em;
+    font-weight: 500;
+}
+section.getStarted div input {
+    display: block;
+    width: 100%;
+    border: 1px solid #7f7f7f;
+    border-radius: 0.3em;
+    height: 2em;
+    color: #757575;
+    margin: 0.2em 0 1.2em 0;
+}
+section.getStarted div a {
+    text-align: center;
+    display: block;
+    margin: 2.5em auto 1.2em auto;
+    border: 1px solid black;
+    border-radius: 0.3em;
+    background-color: #3f9bf8;
+    color: white;
+    width: 30%; 
+    font-size: 0.8em;
+    font-weight: 300;
+    padding: 0.4em 0.5em;
+}
+section.getStarted div p {
+    text-align: center;
+    margin: 0 auto;
+}
+section.getStarted p.textGrey {
+    margin: 0;
+    font-size: 0.8em
+}
+section.getStarted a.textGrey {
+    margin: 0.2em 0 0 0;
+}
+/*------*/
+footer {
+    background-color: #3f4655;
+    padding: 2em;
+}
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 0.9em;
+}
+footer ul li.footerListTitle {
+    font-weight: 700;
+    color: #6d737e;
+    margin: 0 1em;
+}
+footer ul li ul {
+    display: flex;
+    flex-direction: column;
+}
+footer ul li ul li {
+    color: #babdc2;
+    margin: 0.2em 0;
+}
+footer ul.footerSocialMedias {
+    margin: 2em 0;
+}
+footer ul.footerSocialMedias li a i {
+    background-color: #b0b5bf;
+    text-align: center;
+    padding: 0.2em;
+    font-size: 1.5em;
+    border-radius: 35%;
+    color: #3f4655;
+    width: 1em;
+    height: 1em;
+}
+footer ul.footerSocialMedias li {
+    margin: 0.5em;
+}
+footer div.copyright {
+    text-align: center;
+}
+footer div.copyright p {
+    color: #91959d;
+    font-size: 0.8em;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ex04</title>
+	</head>
+	<body>
+		<button id="goButton">Affiche</button>
+		<script type="text/javascript">
+			document.getElementById('goButton').onclick = affiche;
+			let tab = [-2, 1, 4];
+			function additionne (x) {
+				return x + 2;
+			}
+			function affiche () {
+				alert(additionne(tab[0]));
+				alert(additionne(tab[tab.length - 1]));
+			}
+		</script>
+		
+	</body>
+</html>

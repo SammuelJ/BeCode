@@ -1,0 +1,155 @@
+/* ********Colors******** */
+:root {
+	--main: #0277bd;
+	--dark: #004c8c;
+	--light: #58a5f0;
+}
+
+body {margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; background-color: #eff0fc; color: #2b2b2b;}
+
+/* ********Header******** */
+.header {
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+
+.header img {
+	margin: 1.8em;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	width: 150px;
+	height: 150px;
+	border: 2px solid var(--main);
+	border-radius: 5px;
+}
+
+.header h1 {
+	font-size: 3em;
+	margin: 0;
+}
+
+.header h2 {
+	font-weight: 400;
+	margin: 0.5em;
+}
+
+/* ********Info******** */
+
+div.contact-info {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: repeat(4, 1fr);
+	background-color: var(--dark);
+	color: white;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+div.info-content {
+	text-align: center;
+	margin: 0.2em;
+}
+div.info-content > p {
+	margin: 0.2em;
+}
+/* ********About me******** */
+
+div.about-me {
+	text-align: center;
+	margin: 4em 0;
+}
+div.about-me h2 {
+	font-size: 2em;
+	text-transform: uppercase;
+}
+div.about-me p {
+	font-size: 1em;
+	font-weight: 300;
+	margin: 0 2.5em;
+}
+
+/* ********Experiences******** */
+div.experiences {
+	background-color: var(--light);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.15);
+	margin: 2.5em 0;
+}
+div.experiences h2 {
+	text-align: center;
+	font-size: 2em;
+	padding: 0.5em 0 0 0;
+	margin: 1em 0 0.7em 0;
+	color: #1e1e1e;
+	text-transform: uppercase;
+}
+div.exp-blocks img {
+	border-radius: 12px;
+	width: 100px;
+	height: 100px;
+}
+div.exp-blocks {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2em;
+	text-align: center;
+	padding: 0.2em 0 1.5em 0;
+	margin: 0 1em;
+}
+div.exp-blocks div.exp-block p.exp-company-name {
+	font-size: 1.3em;
+	margin: 0;
+	font-weight: 700; 
+}
+div.exp-blocks div.exp-block p.exp-role {
+	margin: 0.2em;
+	font-weight: 500; 
+}
+div.exp-blocks div.exp-block p.exp-desc {
+	margin: 0;
+	font-weight: 300;
+	font-size: 0.8em;
+}
+div.exp-block {
+}
+/* ********Intereset******** */
+
+div.interest {
+	display: grid;
+	grid-template-columns: 1.5fr 4fr;
+	text-align: center;
+	margin: 2.5em 0 1em 0 ;
+}
+div.interest h4 {
+	font-size: 2em;
+	text-transform: uppercase;
+}
+div.inter-blocks { 
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: center;
+	color: var(--main);
+}
+div.inter-blocks div > i {
+	font-size: 2.2em;
+}
+div.inter-blocks div > p {
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+/* ********Footer******** */
+
+div.footer {
+	background-color: #2d2d2d;
+	margin: 0 ;
+	padding: 0.05em;
+	color: white;
+	text-align: center;
+	font-size: 0.8em;
+	font-weight: 300;
+}
+div.footer a {
+	text-decoration: none;
+	color: white;
+}

@@ -1,0 +1,10 @@
+.jumbotron-fluid {
+	height: 70vh;
+	background-image: url('../img/bg1.jpg');
+	background-size: cover;
+	background-position: 0 30%;
+}
+
+.carousel-item img {
+	max-height: 70vh;
+}

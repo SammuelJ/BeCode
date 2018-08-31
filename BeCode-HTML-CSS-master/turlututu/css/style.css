@@ -1,0 +1,215 @@
+body {margin: 0; padding: 0;font-family: 'Open Sans', sans-serif;}
+/* GENERAL */ 
+ul {
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+} 
+h1, h2 {
+    margin: 0;
+}
+/*---*/
+header nav {
+    background-color: #333333;
+    width: 100%;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+header nav ul {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 45px;
+    line-height: 45px;
+}
+header nav ul li {
+    margin-left: 2em;
+}
+header nav ul li a {
+    color: white;
+}
+header nav ul li.logo {
+    font-size: 2em;
+    margin: 0;
+}
+header nav ul li.alignRight {
+    margin-left: auto;
+}
+/*---*/
+div.header-main {
+    width: 70%;
+    height: 27vh;
+    margin: auto;
+    background-image: url(../img/user.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+div.header-content {
+    text-align: center;
+    background-color: #1e93cc;
+    height: 35vh;
+    padding: 2% 0;
+    color: white;
+}
+div.header-content h1 {
+    margin: 1em 0 0.2em 0;
+}
+div.header-content h2 {
+    margin-bottom: 1.75em;
+    font-weight: 300;
+}
+div.header-content a.ctaButton {
+    background-color: #e99002;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+/*--*/
+section.catchyPhraseTop {
+    text-align: center;
+}
+section.catchyPhraseTop h3 {
+    font-weight: 400;
+    margin: 1em 0;
+    font-size: 1.3em;
+}
+/*---*/
+section.features {
+    background-color: #1e93cc;
+    color: white;
+}
+section.features ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 6em;
+    padding: 1.2em 0 4em 0;
+}
+section.features ul li {
+    width: 50%;
+}
+section.features ul li h4 {
+    font-size: 1.3em;
+    font-weight: 400
+}
+section.features ul li p {
+    font-size: 0.9em;
+    font-weight: 300;
+    margin: 0 0.7em;
+}
+/*----*/
+section.catchyPhraseBottom h3 {
+    color: #6f6f6f;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.3em;
+}
+/*----*/
+
+section.partnerLogos {
+    background-color: #eeeeee;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 2em 0;
+}
+section.partnerLogos ul {
+    padding: 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section.partnerLogos ul li img {
+	filter: grayscale(98%);
+    max-height: 45px;
+    margin: 0 0.7em;
+}
+section.partnerLogos div.mainPartner {
+    text-align: center;
+    margin: 0;
+}
+section.partnerLogos div.mainPartner img {
+    max-height: 100px;
+    margin: 0 auto;	
+    filter: contrast(110%);
+    max-height: 35px;
+    margin: 3em 0 2em 0;
+}
+/*----*/
+
+section.bottomButtons {
+    margin: 4em 0 6em 0;
+}
+section.bottomButtons ul {
+    display: flex;
+    margin: auto;
+    width: 75%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section.bottomButtons ul li {
+    margin: 0 0.3em;
+}
+section.bottomButtons ul li a {
+	display: inline-block;
+	text-align: center;
+    font-size: 1.3em;
+    background-color: #165882;
+    padding: 0.75em 1em;
+    width: 7.5em;
+    color: white;
+    border-radius: 10px;
+}
+section.bottomButtons ul li a.yellowBackground {
+    background-color: #e99002;
+}
+/*-----*/
+footer {
+    overflow: hidden;
+}
+footer ul {
+    background-color: #333333;
+    display: flex;
+    margin: 0;
+    padding: 1em 0 2em 0;
+    font-size: 0.7em;
+}
+footer ul li {
+    margin-left: 1em;
+    border-right: 1px dashed white;
+    padding-right: 1em;
+}
+footer ul li a {
+    color: white;
+}
+footer ul li.alignRight, footer ul li.lastItemRight {
+    border: none;
+}
+footer ul li.alignRight {
+    margin-left: auto;
+}
+/*---*/
+div.chatButton {
+    position: fixed;
+    bottom: 1em;
+    right: 0.7em;
+    font-size: 1.8em;
+    background-color: #165882;
+    border-radius: 2em;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+}
+div.chatButton a {
+    color: white;
+ }

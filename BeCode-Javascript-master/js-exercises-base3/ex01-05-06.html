@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<img src="image1.jpg" class="img" id="image1"alt="">
+	<img src="image2.jpg" class="img" id="image2"alt="">
+	<script type="text/javascript">
+		
+	//document.getElementById('image1').onmouseenter = change;
+
+	var images = document.getElementsByClassName('img'); 
+	for(let i = 0; i<images.length; i++){ 
+		let x = i + 1
+		images[i].onmouseenter = function(){ 
+			this.src="image" + x + "_2.jpg"; }
+		images[i].onmouseout = function (){
+			this.src="image" + x + ".jpg";
+		}
+	}
+	</script>
+</body>
+</html>

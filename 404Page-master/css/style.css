@@ -1,0 +1,111 @@
+body {font-family: 'Amatic SC', cursive; background-color: rgba(234, 128, 252, 0.3); overflow: hidden;}
+
+/*Mise en place de l'icone principale*/
+
+.iconprincipale {
+	color: #AA00FF;
+	margin: 2% 0 1% 0;
+	font-size: 10em;
+}
+.content {
+	text-align: center;
+	height: 100vh;
+}
+ul.buttonlist {
+	display: flex;
+	justify-content: center;
+}
+ul.buttonlist li {
+	list-style-type: none;
+	margin: 3% 1.5%;
+}
+ul.buttonlist li a {
+	text-decoration: none;
+	color: white;
+}
+ul.buttonlist li.goback button {
+	color: white;
+	background-color: #4A148C;
+	padding: 1.5em 2em;
+	border: none;
+    box-shadow: 2px 2px 2px #888888;
+}
+ul.buttonlist li.goback button:hover {
+	color: white;
+	background-color: #6A1B9A;
+	padding: 1.5em 2em;
+	border: none;
+}
+ul.buttonlist li.contactme button {
+	color: white;
+	background-color: #BA68C8;
+	padding: 1.5em 2em;
+	border: none;
+    box-shadow: 2px 2px 2px #888888;
+}
+ul.buttonlist li.contactme button:hover {
+	color: white;
+	background-color: #CE93D8;
+	padding: 1.5em 2em;
+	border: none;
+}
+
+h1 {
+	color: #7B1FA2;
+	font-size: 5.5em;
+	margin: 0;
+}
+h2  {
+	color: #8E24AA;
+	font-size: 2.5em;
+	margin: 0;
+}
+p {
+	color: #4A148C;
+	font-size: 2.5em;
+	margin: 0.3em 0;
+}
+
+
+/*Animations*/
+
+.animation-goback {
+	width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: infinite;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Standard syntax */
+@keyframes infinite {
+    0% {top:0px;}
+    25% {top:30px;}
+    50% {top:0px;}
+    75% {top:30px;}
+    100% {top:0px;}
+}
+.animation-goback:hover {
+    animation-name: getup;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    top: -23px;
+}
+@keyframes getup {
+    animation-name: infinite;
+    animation-duration: 0s
+.iconprincipale:hover {
+	animation-name: color;
+	animation-duration: 2s;
+}
+@keyframes color {
+	0%{color: #AA00FF}
+	50% {color: red;}
+	100%{color: #AA00FF;}
+}
+@media screen and (max-height: 700) {
+	body {
+		overflow: scroll;
+	}
+}

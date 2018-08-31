@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Exo1</title>
+	</head>
+	<body>
+		<button type="button" id="surfaceButton">Calculer la surface d'un rectangle</button>
+		<button type="button" id="periButton">Calculer le périmètre d'un rectangle</button>
+		<script type="text/javascript">
+			document.getElementById("surfaceButton").onclick = surfaceRectangle;
+			document.getElementById("periButton").onclick = periRectangle;
+
+			function surfaceRectangle () {
+				let largeur = prompt("Largeur ?");
+				let longueur = prompt("Longueur ?");
+				result = largeur * longueur;
+				alert("La surface du rectangle est de : " + result + " m²");
+			} 
+			function periRectangle () {
+				let largeur = prompt("Largeur ?");
+				let longueur = prompt("Longueur ?");	
+				result = largeur * 2 + longueur * 2;
+				alert("Le périmètre du rectangle est de : " + result + " m");
+			}
+		</script>	
+	</body>
+</html>

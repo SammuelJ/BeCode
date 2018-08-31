@@ -1,0 +1,15 @@
+.centercontenu {
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+section {
+	margin-bottom: 15vh;
+}
+.container {
+	background-color: purple;
+}
+.row div {
+	background-color: red;
+	outline: 1px solid white;
+}

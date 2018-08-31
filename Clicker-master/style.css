@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Cookie', cursive;
+}
+
+:root {
+  --cookieColor: #D7A857;
+  --chocolatColor: #542C13;
+}
+body {
+	 background-color: #f1f2f4;
+}
+button.upgrade {
+	padding: 2%;
+	border: 0;
+	color: white;
+	text-align: center;
+	border-radius: 2%;
+	width: 20vh;
+	box-shadow: 0px 3px 9px 2px #00000057;
+	font-size: 1.7rem;
+	color: var(--chocolatColor);
+	background-color: var(--cookieColor);
+}
+button:disabled {
+	background-color: #73818c;
+	opacity: 0.1;
+}
+button.limitedOwned:disabled {
+	display: none;
+}
+#main {
+	display: block;
+	width: 200px;
+	height: 270px;
+	margin-left: 2em; 
+}
+main {
+	display: flex;
+	margin: 0;
+	justify-content: space-between;
+}
+#upgradeOwned {
+	display: flex;
+	flex-direction: column;
+}
+#upgradeAvailable {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 2em; 
+}
+#click {
+  height: 200px;
+  width: 200px;
+  color: var(--cookieColor);
+  background-color: currentColor;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+}
+#click:hover {
+  cursor: pointer;
+}
+#click:after {
+	content: '';
+	top: 50px;
+	left: 50px;
+	position: relative;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	color: var(--chocolatColor);
+	background-color: currentColor;
+	box-shadow: 
+		60px 115px 0 -3px currentColor,
+		35px 25px 0 -2px currentColor,
+		3px 25px 0 -2px currentColor,
+		2px 75px 0 5px currentColor,
+		88px 65px 0 2px currentColor,
+		80px 2px 0 4px currentColor,
+		42px 75px 0  2px currentColor;
+}
+#affichage {
+	text-align: center;
+	font-size: 2.8rem;
+	font-weight: 700;
+}
+ul#upgradeAvailable {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+#upgradeOwned li{
+	font-family: serif;
+}
+#showMessage {
+	margin: 0;
+	font-family: serif;
+	margin-left: 2em;
+}
+#header {
+	font-family: serif;
+	text-align: center;
+	margin: 0;
+}

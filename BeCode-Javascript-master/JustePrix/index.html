@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Juste Prix</title>
+		<style>
+			div#buttonToStart {
+				background-color: lightblue;
+				color: white;
+				text-align: center;
+				height: 10vh;
+				line-height: 10vh;
+				font-size: 1.2rem;
+				border-radius: 2em;
+				width: 95%;
+				margin: 0 auto;
+			}
+			div#buttonToStart:hover {
+				cursor: pointer;
+			}
+			ul {
+				display: flex;
+				list-style-type: none;
+				justify-content: center;
+			}
+			li {
+				margin: 0 10%;
+			}
+			h1 {
+				text-align: center;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1>Jeu du juste prix !</h1>
+		<ul>
+			<li><label for="inputUserMaxValue">Maximum :</label><input name="inputUserMaxValue" type="text" name="maxValue" id="inputUserMaxValue"></li>
+			<li><label for="inputUserMinValue">Minimum :</label><input name="inputUserMinValue" type="text" name="minValue" id="inputUserMinValue"></li>
+		</ul>
+		<div id="buttonToStart">Let's go !</div>
+		<div id="win"></div>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

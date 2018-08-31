@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <label for="motdepasse">Votre mot de passe : </label><input type="text" name="motdepasse" value="" id="motdepasse" />
+    <label for="confirmation">Confirmez : </label><input type="text" name="confirmation" value="" id="confirmation" />
+    <button type="button" name="button" >Vérification</button>
+  </form>
+  <script>
+  	/*Dans le fichier HTML fourni, mettre les bordures des inputs en rouge si les mots de passe sont différents. Sinon les mettre en vert.*/
+  	let inputPassword = document.getElementById("motdepasse");
+  	let inputConfirmation = document.getElementById("confirmation");
+    let inputConfirmationValue = inputConfirmation.value;
+    let inputPasswordValue = inputPassword.value;
+
+    inputPassword.addEventListener("input", function() {
+      inputPasswordValue = inputPassword.value;
+      verification();
+    });
+    inputConfirmation.addEventListener("input", function() {
+      inputConfirmationValue = inputConfirmation.value;
+      verification();
+    });
+    function verification () {
+      if (inputConfirmationValue !== inputPasswordValue) {
+        inputPassword.style.border = "3px solid red";
+        inputConfirmation.style.border = "3px solid red";
+      } else {
+        inputPassword.style.border = "3px solid green";
+        inputConfirmation.style.border = "3px solid green";
+      }
+    }
+
+  </script>
+</body>
+</html>

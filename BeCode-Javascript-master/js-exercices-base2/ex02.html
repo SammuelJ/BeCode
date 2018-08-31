@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ex02</title>
+	</head>
+	<body>
+		<button type="button" id="show">Afficher le résultat !</button>
+		<script type="text/javascript">
+
+			function calculRayon () {
+				//demande la saisie d'un rayon;
+				let rayon = parseFloat(prompt("Rayon ?"));
+				result = Math.PI * Math.pow(rayon, 2);
+				//retourne la surface du cercle de ce rayon. 
+				alert(result);
+			}
+			//Afficher ensuite le résultat de l'appel à cette fonction en cliquant sur un bouton ??????????????
+			//document.getElementById("show").onclick = calculRayon;
+			document.getElementById("show").addEventListener('click', calculRayon);
+
+		</script>
+	</body>
+</html>

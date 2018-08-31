@@ -1,0 +1,44 @@
+#small, #medium, #large {
+	display: none;
+}
+ul {
+	display: flex; 
+	flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 300px) {
+	body {
+		background-color: red;
+		font-size: 1.5em;
+	}
+	#small {
+		display: block
+	}
+}
+@media only screen and (min-width: 301px) and (max-width: 768px) {
+	body {
+		background-color: green;
+		font-size: 1.3em;
+	}
+	#medium {
+		display: block
+	}
+	#medium .first {
+		width: 66%
+	}
+	#medium .second {
+		width: 33%
+	}
+}
+@media only screen and (min-width: 769px) {
+	body {
+		background-color: blue;
+		font-size: 1em;
+	}
+	#large {
+		display: block
+	}
+	#large ul {
+		flex-wrap: nowrap;
+	}
+}

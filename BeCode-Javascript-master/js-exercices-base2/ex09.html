@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exo10</title>
+</head>
+<body>
+	<button id="goButton">Go go go !</button>
+	<script>
+		//Créer un bouton. Au click de ce bouton, lancer la fonction testWhile. Cette fonction demande à l'utilisateur de saisir une chaîne de caractères contenant la lettre p, et le redemande tant que l'utilisateur ne l'a pas fait. Il affiche ensuite la chaîne saisie entre guillemets.
+		let button = document.getElementById("goButton").addEventListener("click", testWhile);
+
+		function testWhile () {
+			let inputUser = prompt("Saisir une chaine de caractères contenant la lettre 'P'");
+
+			while(inputUser.indexOf("p") == -1) {
+				testWhile();
+				break;
+			}
+			if (inputUser.indexOf("p") != -1) {
+				alert('"' + inputUser + '"');
+			}
+		}
+	</script>
+	
+</body>
+</html>

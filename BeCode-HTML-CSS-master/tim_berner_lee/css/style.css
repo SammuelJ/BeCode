@@ -1,0 +1,42 @@
+* {margin: 0; padding: 0;}
+
+div.all-content {
+    background-color: aqua;
+    margin: 3% 25%;
+}
+/* Main Content*/
+div.main-content {
+    background-color: green;
+    text-align: center;
+    padding: 1.5em;
+}
+div.main-content img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+div.main-content p {
+    text-align: left;
+    margin: 2em;
+}
+div.main-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    border: 1px solid red;
+    padding: 0.5em;
+}
+/*Socials*/
+div.social-content {
+    background-color: blue;
+    height: 6em;
+    width: 100%;
+}
+div.social-content ul {
+    border: 1px solid black;
+    text-align: center;
+    margin: auto 0;
+}
+div.social-content ul li {
+    display: inline-block;
+}

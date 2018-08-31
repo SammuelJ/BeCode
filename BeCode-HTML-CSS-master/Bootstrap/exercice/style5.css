@@ -1,0 +1,15 @@
+
+.row div:nth-child(odd) {
+	background-color: red;
+	outline: 10px solid white;
+}
+.row div:nth-child(even) {
+	background-color: #ffa2a3;
+	outline: 10px solid white;
+}
+div {
+	height: 15vh;
+}
+.container {
+	margin-top: 10vh;
+}

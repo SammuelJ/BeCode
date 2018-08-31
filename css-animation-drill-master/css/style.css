@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+div#stage {
+	margin: auto;
+	height: 600px;
+	width: 600px;
+	/*background-image: url(../img/css_animation_exercise_stage.png);*/
+}
+div#hero {
+	position: relative;
+	border: 1px dashed red;
+	width: 75px;
+	height: 75px;
+	top: 20px;
+	left: 20px;
+	animation-duration: 17s;
+	animation-name: move;
+	animation-fill-mode: backwards;
+	animation-iteration-count: infinite;
+}
+@keyframes move {
+	0% {
+		left: 20px; 
+		top:20px;
+		transform: none;
+	}
+	27.78% {
+		top:20px;
+		left: 500px;
+		transform: none;
+	} 
+	38.9% {
+		left: 500px;
+		top: 200px;
+		transform: none;
+	}
+	41.68% {
+		left: 270px;
+		top: 200px;
+		transform: rotate(45deg);
+	}
+	52.79% {
+		left: 270px;
+		top: 200px;
+		transform: rotate(45deg);
+		border: 1px dashed red;
+	}
+	66.68% {
+		left: 20px;
+		top: 201px;
+		transform: rotate(90deg);
+		border: 1px dashed blue;
+		border-radius: 0%;
+		background: none;
+		width: 75px;
+		height: 75px;
+
+	}
+	100% {
+		left: 441px;
+		top: 441px;
+		border-radius: 50%;
+		width: 150px;
+		height: 150px;
+		background: radial-gradient(#FBDA61, #F76B1C);
+		border: none;
+	}
+}
