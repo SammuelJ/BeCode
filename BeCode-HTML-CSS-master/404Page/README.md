@@ -1,6 +1,6 @@
 # 404Page
 
-[Voir le site](https://sammuelj.github.io/404Page/)
+[Voir le site](https://sammuelj.github.io/Becode/BeCode-HTML-CSS-master/404Page/)
 
 ## Objectifs
 
@@ -11,8 +11,3 @@
 ### Bonus
 
 - Ajouter une animation quand on passe la souris sur un élément
-
-
-## Couleur(s) utilisée(s)
-
-## Police(s) Utilisée(s)
