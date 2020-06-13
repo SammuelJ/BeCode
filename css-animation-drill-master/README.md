@@ -7,6 +7,6 @@ Exerice effectué lors de la formation BeCode.org
 ## Instruction
 
 Reproduire les animations présentes sur l'image ci-dessous. 
-![Image](https://becodeorg.github.io/end-of-prairie-technical-drill/images/css_animation_exercise_4.png)
+![Image](https://github.com/SammuelJ/Becode/blob/master/css-animation-drill-master/img/css_animation_exercise_4.png)
 
 [*Full english instruction*](https://becodeorg.github.io/end-of-prairie-technical-drill/)
